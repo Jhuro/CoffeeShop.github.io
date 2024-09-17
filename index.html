@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--Lenguaje del contenido la página para accesibilidad-->
+<html lang="es-CO">
+<head>
+    <!--Códificación de cáracteres, se requiere utf-8 para html5 entre otras cosas-->
+    <meta charset="UTF-8">
+    <!--Ayuda a que la página sea responsive, adaptandose al tamaño de pantalla del dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título del documento, se puede ver en la pestaña del navegador-->
+    <title>Página café</title>
+    <!--Icono de la página, se puede ver en la pestaña del navegador-->
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="images/cafe.png" />
+</head>
+<body>
+    <h1 id="switch">hola</h1>
+    <!--
+    SCRIPTS
+    Preferiblemente al final del body.
+    Solo con scripts externos: 
+    defer <script ... defer></script> = Descarga el script mientras se reneriza la página, al final se ejecuta
+    async = <script ... defer></script> = Descarga el script mientras se reneriza la página, con termina de descargarse se ejecuta pausando el render, al finalizar la ejecución continua el render
+    -->
+    <script>
+        document.getElementById('switch').addEventListener('click', function() {
+          document.body.classList.toggle('black');
+        });
+      </script>
+</body>
+</html>
