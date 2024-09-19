@@ -4,15 +4,57 @@
 <head>
     <!--Códificación de cáracteres, se requiere utf-8 para html5 entre otras cosas-->
     <meta charset="UTF-8">
+
     <!--Ayuda a que la página sea responsive, adaptandose al tamaño de pantalla del dispositivo-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Directivas pragma-->
+    <!--La directiva pragma más útil es conten-security-policy para especificar los origenes y end-points permitidos-->
+    <meta http-equiv="content-security-policy" content="default-src https:" />
+
+    <!--Elementos para SEO-->
+    <!--Palabras clave utilizadas en la página-->
+
+    <meta name="keywords" content="café, cafetería" />
+    <!--La descripción es lo que aparece debajo del título en los resultadosde búsqueda-->
+    <meta name="description" content="Simulación de una página de venta de productos de cafetería e información de su preparación" />
+    <meta name="theme-color" content="#226DAA" />
     <!--Título del documento, se puede ver en la pestaña del navegador-->
     <title>Página café</title>
+
     <!--Icono de la página, se puede ver en la pestaña del navegador-->
     <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="assets/cafe.png" />
+
+    <!--Recurso original y URL preferida-->
+    <link rel="canonical" href="https://jhuro.github.io/CoffeeShop.github.io/" />
+
+    <!--Tarjeta de presentación al compartir el enlace en twitter-->
+    <meta name="twitter:title" content="Página café" />
+    <meta name="twitter:description" content="Simulación de una página de venta de productos de cafetería e información de su preparación" />
+    <meta name="twitter:url" content="https://jhuro.github.io/CoffeeShop.github.io/?src=twitter" />
+    <meta name="twitter:image:src" content="assets/cafeteria.jpg" />
+    <meta name="twitter:image:alt" content="café con figura de corazón" />
+
+    <!--Tarjeta de presentación al compartir el enlace en facebook-->
+    <meta property="og:title" content="Página café" />
+    <meta property="og:description" content="Simulación de una página de venta de productos de cafetería e información de su preparación" />
+    <meta property="og:image" content="assets/cafeteria.jpg" />
+    <meta property="og:image:alt" content="café con figura de corazón" />
+
 </head>
 <body>
-    <h1 id="switch">hola</h1>
+
+  <!--Cabecera de la página-->
+  <header>
+    <h1>Machine Learning Workshop</h1>
+    <nav>
+      <a href="#register">Registrarse</a>
+      <a href="#about">Acerca de</a>
+      <a href="#products">Productos</a>
+      <a href="#feedback">Comentarios</a>
+    </nav>
+  </header> 
+
     <!--
     SCRIPTS
     Preferiblemente al final del body.
