@@ -9,10 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Directivas pragma-->
+
     <!--La directiva pragma más útil es conten-security-policy para especificar los origenes y end-points permitidos-->
     <meta http-equiv="content-security-policy" content="default-src https:" />
 
     <!--Elementos para SEO-->
+
     <!--Palabras clave utilizadas en la página-->
 
     <meta name="keywords" content="café, cafetería" />
@@ -44,20 +46,55 @@
 </head>
 <body>
 
-  <!--Cabecera de la página-->
+  <!--HTML semantico, hace que la estructura de la página se entienda mejor sin necesidad de comentarios, entre otras ventajas-->
+
+  <!--Cabecera principal de la página-->
   <header>
-    <h1>Machine Learning Workshop</h1>
+    <h1>Página Café</h1>
+
+    <!--Navegación principal de la página-->
     <nav>
-      <a href="#register">Registrarse</a>
-      <a href="#about">Acerca de</a>
-      <a href="#products">Productos</a>
-      <a href="#feedback">Comentarios</a>
+      <a href="#registro">Registrarse</a>
+      <a href="#drinks">Bebidas</a>
+      <a href="#productos">Productos</a>
+      <a href="#acerca-de">Acerca De</a>
     </nav>
   </header> 
 
+  <!--Contenido principal de la página-->
+  <main>
+    <section id="registro">
+      <h2>Inicia sesión o crea una cuenta</h2>
+    </section>
+
+    <section id="bebidas"></section>
+      <h2>Bebidas</h2>
+    </section>
+
+    <section id="productos">
+      <h2>Productos</h2>
+    </section>
+
+    <section id="acerca-de"></section>
+      <h2>Sobre nosotros</h2>
+    </section>
+
+
+  </main>
+
+  <!--Pie de página-->
+  <footer>
+    <p>&copy;2024 Página Café. Todos los derechos reservados.</p>
+
+    <!--Información de contacto-->
+    <address>Autor: <a href="/jhuro.html">Jhuro</a></address>
+  </footer>
+
     <!--
     SCRIPTS
+
     Preferiblemente al final del body.
+
     Solo con scripts externos: 
     defer <script ... defer></script> = Descarga el script mientras se reneriza la página, al final se ejecuta
     async = <script ... defer></script> = Descarga el script mientras se reneriza la página, con termina de descargarse se ejecuta pausando el render, al finalizar la ejecución continua el render
